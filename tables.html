@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: black;
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #fdeaea;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;"/>
+        </colgroup>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Pakistan</td>
+            <td>PK</td>
+            <td>pakistan@google.com</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>cn@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>jp@google.com</td>
+        </tr>
+    </table>
+
+    <table style="width: 100%; padding: auto">
+        <tr>
+            <th colspan="3">Country</th>
+            <td>Pakistan</td>
+            <td>India</td>
+            <td>United States of America</td>
+        </tr>
+        <tr>
+            <th>Country Code</th>
+            <td>PK</td>
+            <td>IN</td>
+            <td>USA</td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
