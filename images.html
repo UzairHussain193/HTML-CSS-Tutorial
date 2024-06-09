@@ -18,9 +18,26 @@
     <img src="" width="600px" alt="image from pexels">
 
     <picture>
-        <source media="(min-width: 650px)" srcset="./happy.jpg" /> 
-        <source media="(min-width: 460px)" srcset="./happy2.jpg" /> 
-        <img src="./happy.jpg" alt="">
+        <source media="(min-width: 650px)" srcset="./" /> 
+        <source media="(min-width: 460px)" srcset="./" /> 
+        <img src="" alt="">
     </picture>
+
+    <!-- an image map generator -->
+    <img src="happy.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area  onclick="one()" alt="" title="" href="" coords="348,379,634,624" shape="rect">
+        <area onclick="two()" target="" alt="" title="" href="" coords="339,3,453,115" shape="rect">
+    </map>
+
+    <script>
+        function one(){
+            alert("You clicked on the first area");
+        }
+        function two(){
+            alert("You clicked on the second area");
+        }
+    </script>
 </body>
 </html>
