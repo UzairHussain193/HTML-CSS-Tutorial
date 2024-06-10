@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 1</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="" method="GET" accept-charset="UTF-8" autocomplete="on" enctype="text/plain">
+        
+        <label for="fname">First Name: </label>
+        <input type="text" placeholder="First Name" name="" value="uzair" id="fname">
+
+        <label for="pass">Password: </label>
+        <input type="password" name="" id="pass">
+
+        <label for="week">Select Week</label>
+        <input type="week" name="" id="week">
+
+        <label for="date">Select Date</label>
+        <input type="date" name="" id="date">
+
+        <label for="email">Email: </label>
+        <input type="email" name="" id="email">
+        
+        <input type="reset" value="reset">
+
+        <label for="select">Select: </label>
+        <select name="editors" id="select">
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JS</option>
+        </select>
+        
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JS</option>
+        </datalist>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
