@@ -16,36 +16,57 @@
     <form action="" method="GET" accept-charset="UTF-8" autocomplete="on" enctype="text/plain">
         
         <label for="fname">First Name: </label>
-        <input type="text" placeholder="First Name" name="" value="uzair" id="fname">
+        <input type="text" placeholder="First Name" name="" id="fname"><br>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" placeholder="Last Name" id="lname"><br>
 
         <label for="pass">Password: </label>
-        <input type="password" name="" id="pass">
+        <input type="password" placeholder="password" id="pass" required minlength="6" maxlength="10"><br>
 
         <label for="week">Select Week</label>
-        <input type="week" name="" id="week">
+        <input type="week" name="" id="week"><br>
 
         <label for="date">Select Date</label>
-        <input type="date" name="" id="date">
+        <input type="date" name="" id="date"><br>
 
         <label for="email">Email: </label>
-        <input type="email" name="" id="email">
+        <input type="email" name="" id="email"><br>
         
-        <input type="reset" value="reset">
+        <label for="file">Select file</label>
+        <input type="file" name="" id="file"><br>
 
         <label for="select">Select: </label>
         <select name="editors" id="select">
             <option value="1">HTML</option>
             <option value="2">CSS</option>
             <option value="3">JS</option>
-        </select>
+        </select><br>
         
+        <label for="editors">Select from datalist</label>
         <input list="editors" name="editor">
         <datalist id="editors">
             <option value="1">HTML</option>
             <option value="2">CSS</option>
             <option value="3">JS</option>
-        </datalist>
+        </datalist><br>
 
+        <input type="hidden" name="">
+
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" name="volume" min="0" max="11" /><br>
+        
+
+        <label for="">Radio Buttons</label><br>
+        <input type="radio" name="abc" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="abc" id="css" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" name="abc" id="js" value="JS">
+        <label for="js">JS</label><br>
+
+        
+        <input type="reset" value="reset"><br>
         <button type="submit">Submit</button>
 
     </form>
